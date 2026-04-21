@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* Enable class-based dark mode for Tailwind v4 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html,
+  body {
+    @apply transition-colors duration-300;
+  }
+
+  html.dark,
+  html.dark body {
+    background-color: #111116;
+    color: #ffffff;
+  }
+}

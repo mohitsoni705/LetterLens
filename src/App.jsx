@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import StatCard from './components/StatCard';
+import Footer from './components/Footer';
 
 function App() {
   const [text, setText] = useState('');
@@ -98,7 +99,9 @@ function App() {
             colorClass="bg-blue-400" 
           />
         </div>
+
       </main>
+      <Footer />
     </div>
   );
 }
